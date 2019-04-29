@@ -10,6 +10,7 @@ bibboxapplicationstorefolder="application-store"
 bibboxinstancefolder="application-instance"
 bibboxbaseurl="<%= $bibboxbaseurl %>"
 usedinstanceids="error"
+bibboxbaseurlschema="http"
 
 # Elastic Serach Configuration
 elasticDomainIndex="dcrb"
@@ -22,3 +23,4 @@ vmadminroles="BIBBOX VM Admin"
 # init configuration
 ApplicationStoreUpdate="ON"
 bibboxScriptUpdate="ON"
+
