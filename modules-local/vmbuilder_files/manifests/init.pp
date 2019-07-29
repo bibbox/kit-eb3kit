@@ -183,6 +183,12 @@ class vmbuilder_files(
 
 
 		# Copy bibbox configuration and init scripts
+		file { "/etc/init.d/bibbox":
+				source 		=> '/opt/bibbox/sys-bibbox-vmscripts/initscripts/etc/init.d/bibbox',
+				owner  		=> 'root',
+				group  		=> 'root',
+				mode   		=> '0777'
+		}
 		file { "/etc/init.d/functions":
 				source 		=> '/opt/bibbox/sys-bibbox-vmscripts/initscripts/etc/init.d/functions',
 				owner  		=> 'root',
