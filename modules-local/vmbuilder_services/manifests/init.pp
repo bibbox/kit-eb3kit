@@ -31,7 +31,7 @@ class vmbuilder_services (
 
     exec { 'installLiferayContent':
 				path			=> '/usr/bin',
-				command 	=> '/usr/bin/sudo  /opt/bibbox/sys-bibbox-vmscripts/initscripts/runSetupScript.sh',
+				command 	=> '/usr/bin/sudo chmod +x /opt/bibbox/sys-bibbox-vmscripts/initscripts/* && /usr/bin/sudo  /opt/bibbox/sys-bibbox-vmscripts/initscripts/runSetupScript.sh',
 				timeout   => 2800
 		}
 
