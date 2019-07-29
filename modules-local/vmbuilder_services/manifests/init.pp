@@ -21,11 +21,6 @@ class vmbuilder_services (
 				enable 		=> true
 		}
 
-    service { 'bibbox':
-				ensure 		=> running,
-				enable 		=> true
-		}
-
    #########################################
     #        LIFERAY SETUP SCRIPT           #
     #########################################
