@@ -58,15 +58,6 @@ class vmbuilder_services (
 				command 	=> '/usr/bin/sudo /usr/local/bin/docker-compose -f /opt/bibbox/sys-idmapping/docker-compose.yml up -d',
 				timeout   => 2800
 		}
-		exec { 'dockerUpSyncTechnical':
-				path			=> '/usr/bin',
-				command 	=> '/usr/bin/sudo /usr/local/bin/docker-compose -f /opt/bibbox/sys-bibbox-sync/sync-technical/docker-compose.yml up -d',
-				timeout   => 2800
-		}
-		exec { 'dockerUpSyncDomain':
-				path			=> '/usr/bin',
-				command 	=> '/usr/bin/sudo /usr/local/bin/docker-compose -f /opt/bibbox/sys-bibbox-sync/sync-domain/docker-compose.yml up -d',
-				timeout   => 2800,
-		}
+	
 
 }
