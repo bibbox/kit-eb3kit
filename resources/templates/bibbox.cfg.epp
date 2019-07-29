@@ -10,7 +10,7 @@ bibboxapplicationstorefolder="application-store"
 bibboxinstancefolder="application-instance"
 bibboxbaseurl="<%= $bibboxbaseurl %>"
 usedinstanceids="error"
-bibboxbaseurlschema="http"
+bibboxbaseurlschema="http://"
 
 # Elastic Serach Configuration
 elasticDomainIndex="dcrb"
